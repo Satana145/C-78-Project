@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+    background-color: hotpink;
+}
+h1{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 40px;
+}
+div{
+    margin: 100px;
+}
+#members{
+    height: 250px;
+}
+#nex{
+    border-style: none;
+    border-radius: 30%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}

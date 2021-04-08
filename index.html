@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>My Family</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link rel="icon" href="family.png">
+</head>
+
+<body>
+    <div id="top">
+        <h1 id="header" class="text">My Family</h1>
+        <img src="91zbi9M+mKL.png" height="500px">
+    </div>
+    <div>
+        <img id="members" src="WhatsApp Image 2020-02-16 at 8.09.36 AM 1.png">
+        <p id="memberName" class="text">Dad</p>
+        <button id="nex" onclick="goNext()"><b>Next</b></button>
+    </div>
+    <script>
+        var famPics = [
+            "WhatsApp Image 2020-02-16 at 8.09.36 AM 2.png", 
+            "WhatsApp Image 2020-02-16 at 8.09.36 AM 3.png", 
+            "WhatsApp Image 2020-02-16 at 8.09.36 AM 4.png", 
+            "WhatsApp Image 2020-02-16 at 8.09.36 AM 1.png"
+        ];
+        var famNams = [
+            "Sister", 
+            "Me", 
+            "Mom", 
+            "Dad"
+        ];
+        var memNo = 0;
+        function goNext() {
+            if (memNo > 3) {
+                memNo = 0;
+            }
+            document.getElementById("members").src = famPics[memNo];
+            document.getElementById("memberName").innerHTML = famNams[memNo];
+            memNo = memNo + 1;
+        }
+    </script>
+</body>
+</html>
